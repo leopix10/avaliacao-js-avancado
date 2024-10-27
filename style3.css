@@ -1,0 +1,253 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.cabecalho{
+    display: flex;
+    color: white;
+    background-color: black;
+    height: 90px;
+    text-align: center;
+    align-items: center;
+}
+
+nav{
+    display: flex;
+}
+
+.nav-titulo{
+    font-family: Jaini;
+    font-size: 35px;
+    margin-left: 12px;
+}
+
+.especificacoes{
+    display: flex;
+    margin-left: 370px;
+    gap: 55px;
+    align-items: center;
+    text-align: center;
+    margin-top: 8px;
+}
+
+span{
+    color: crimson;
+    font-size: 42px;
+}
+
+body{
+    background-image: url(img/wood-background-02.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.pesquisa{
+    margin-left: 200px;
+    display: flex;
+}
+
+#pesquisa{
+    height: 35px;
+    width: 180px;
+}
+
+#botao{
+    margin-left: 30px;
+    height: 35px;
+    width:100px;
+    border-radius: 5px;
+}
+
+#botao:hover{
+    border: solid 2px crimson;
+    scale: 1.1;
+    transition: 1s;
+}
+
+#peças{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+#peças:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    color: white;
+}
+
+#sobremesas{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+#sobremesas:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    color: white;
+}
+
+.produtos1{
+    display: flex;
+    color: white;
+    width: 1270px;
+    height: 580px;
+    border: solid 1px black;
+    border-radius: 5px;
+    background-color: black;
+    border: solid 2px crimson;
+}
+
+img{
+    height: 460px;
+    width: 600px;
+    margin-top: 55px;
+    margin-left: 20px;
+}
+
+img:hover{
+    scale: 1.05;
+    transition: 1s;
+}
+
+h2{
+    margin-bottom: 5px;
+}
+
+#detalhes{
+    margin-top: 10px;
+    height: 28px;
+    width: 70px;
+    background-color: crimson;
+    color: black;
+    border: solid 1px black;
+    border-radius: 3px;
+}
+
+#detalhes:hover{
+    cursor: pointer;
+}
+
+.textos{
+    display: flex;
+    flex-direction: column;
+    padding: 60px;
+    width: 450px;
+    justify-content: space-between;
+}
+
+#h2-maior{
+    font-size: 4rem;
+}
+
+p{
+    font-size: 1.4rem;
+}
+
+#botao-compra{
+    margin-left: 178px;
+    height: 35px;
+    width:90px;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 18px;
+    border: solid 2px crimson;
+    border-radius: 10px;
+    background-color: crimson;
+    color: white;
+}
+
+form{
+    margin-top: 30px;
+    border: solid 1px white;
+    width: 400px;
+    height: 220px;
+}
+
+
+
+#email{
+    margin-top: 40px;
+    height: 30px;
+    width: 320px;
+}
+
+#menor{
+    margin-top: 10px;
+    font-size: 1.5rem;
+}
+
+.termos{
+    display: flex;
+    margin-left: 39px;
+    margin-top: 5px;
+}
+
+#cadastrar{
+    margin-top: 30px;
+    width: 100px;
+    height: 35px;
+    border-radius: 7px;
+    background-color: white;
+}
+
+#cadastrar:hover{
+    cursor: pointer;
+    scale: 1.07;
+    transition: 1s;
+    border: solid 1px black;
+}
+
+.tela-carregamento {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .bolinha {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: 12px solid rgb(248, 48, 48);
+    background-color: transparent;
+    border-top: 12px solid transparent;
+    display: block;
+    animation: carregar 1s linear infinite;
+  }
+  
+  @keyframes carregar {
+    from {
+      transform: rotate(0);
+    }
+  
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  .erro{
+    font-size: 15px;
+    color: red;
+    display: none;
+  }
